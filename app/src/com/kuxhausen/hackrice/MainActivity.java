@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.FileObserver;
 import android.provider.MediaStore;
 import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.view.Menu;
 import com.google.android.glass.media.CameraManager;
@@ -18,8 +19,6 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		
 		
 		takePicture();
 	}
@@ -54,6 +53,19 @@ public class MainActivity extends Activity {
 
 	    if (pictureFile.exists()) {
 	        // The picture is ready; process it.
+	    	ContentValues mNewValues = new ContentValues();
+
+			/*
+			 * Sets the values of each column and inserts the
+			 * word. The arguments to the "put" method are
+			 * "column name" and "value"
+			 */
+			mNewValues.put(DatabaseHelper.PictureDB.FILE_PATH, picturePath);
+			mNewValues.put(DatabaseHelper.PictureDB.PICTURE_ID, DatabaseHelper.PictureDB.PICTURE_ID);
+			this.getContentResolver().insert(DatabaseHelper.PictureDB.PICTURES_URI, mNewValues);
+			
+			
+			//TODO send to server or Google Drive
 	    } else {
 	        // The file does not exist yet. Before starting the file observer, you
 	        // can update your UI to let the user know that the application is
