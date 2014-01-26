@@ -69,7 +69,11 @@
         </provider>
 
         <activity
-            android:name="com.kuxhausen.hackrice.SnapRoutletOfferActivity" 
+            android:name="SnapRouletteOfferActivity" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name="SnapRouletteActivity" 
             android:theme="@style/AppTheme">
         </activity>
         
