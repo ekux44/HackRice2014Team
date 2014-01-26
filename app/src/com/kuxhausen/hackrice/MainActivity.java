@@ -2,7 +2,12 @@ package com.kuxhausen.hackrice;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 
 import org.apache.http.HttpResponse;
@@ -44,8 +49,10 @@ public class MainActivity extends Activity {
 	private static final int REQUEST_LINK_TO_DBX = 0;
 
 	private static final String USERNAME = "alabount";
-	private static final String FILE = "file";
-	private static final String SERVER_URL = "http://192.168.43.159/posts/add";
+	private static final String SERVER_POST_URL = "http://192.168.43.159/posts/add";
+	private static final String SERVER_GET_URL = "http://192.168.43.159/posts/getRandom";
+
+	private static final int TAKE_PICTURE_REQUEST = 1;
 
 	private DbxAccountManager mDbxAcctMgr;
 
@@ -58,6 +65,8 @@ public class MainActivity extends Activity {
 				appKey, appSecret);
 
 		takePicture();
+		getRandomPic();
+
 	}
 
 	@Override
@@ -65,13 +74,6 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
-	}
-
-	private static final int TAKE_PICTURE_REQUEST = 1;
-
-	private void takePicture() {
-		Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-		startActivityForResult(intent, TAKE_PICTURE_REQUEST);
 	}
 
 	@Override
@@ -83,6 +85,11 @@ public class MainActivity extends Activity {
 		}
 
 		super.onActivityResult(requestCode, resultCode, data);
+	}
+
+	private void takePicture() {
+		Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+		startActivityForResult(intent, TAKE_PICTURE_REQUEST);
 	}
 
 	private void processPictureWhenReady(final String picturePath) {
@@ -136,25 +143,38 @@ public class MainActivity extends Activity {
 		}
 	}
 
+	private void sendToServer(File pictureFile) {
+		ServerUploadTask upload = new ServerUploadTask();
+		upload.execute(pictureFile);
+	}
+
+	private void getRandomPic() {
+		File randFile = new File("random.jpg");
+		ServerGetRandomTask getRandom = new ServerGetRandomTask();
+		getRandom.execute(randFile);
+	}
+
 	private void uploadToDropbox(File pictureFile) {
 
 		mDbxAcctMgr.startLink((Activity) this, REQUEST_LINK_TO_DBX);
-		
-        try {
-//            DbxPath testPath = new DbxPath(DbxPath.ROOT, pictureFile.getName());
-            DbxPath testPath = new DbxPath(DbxPath.ROOT, "TESTING.TXT");
-			DbxFileSystem dbxFs = DbxFileSystem.forAccount(mDbxAcctMgr.getLinkedAccount());
-			
+
+		try {
+			// DbxPath testPath = new DbxPath(DbxPath.ROOT,
+			// pictureFile.getName());
+			DbxPath testPath = new DbxPath(DbxPath.ROOT, "TESTING.TXT");
+			DbxFileSystem dbxFs = DbxFileSystem.forAccount(mDbxAcctMgr
+					.getLinkedAccount());
+
 			if (!dbxFs.exists(testPath)) {
-                DbxFile testFile = dbxFs.create(testPath);
-                try {
-                    testFile.writeString("TESTING");
-//                    testFile.writeFromExistingFile(pictureFile,false);
-                    
-                } finally {
-                    testFile.close();
-                }
-            }
+				DbxFile testFile = dbxFs.create(testPath);
+				try {
+					testFile.writeString("TESTING");
+					// testFile.writeFromExistingFile(pictureFile,false);
+
+				} finally {
+					testFile.close();
+				}
+			}
 		} catch (Unauthorized e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -167,46 +187,62 @@ public class MainActivity extends Activity {
 		}
 	}
 
-	private void sendToServer(File pictureFile) {
-		ConnectToServerTask myTask = new ConnectToServerTask();
-		myTask.execute(pictureFile);
+	private class ServerGetRandomTask extends AsyncTask<File, Integer, Integer> {
+
+		@Override
+		protected Integer doInBackground(File... file) {
+			try {
+				URL url = new URL(SERVER_GET_URL);
+				HttpURLConnection conn = (HttpURLConnection) url
+						.openConnection();
+
+				InputStream is = conn.getInputStream();
+				Bitmap img = BitmapFactory.decodeStream(is);
+
+				FileOutputStream out = new FileOutputStream(file[0]);
+				img.compress(Bitmap.CompressFormat.JPEG, 90, out);
+				out.close();
+
+			} catch (MalformedURLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			return null;
+		}
 	}
 
-	private class ConnectToServerTask extends AsyncTask<File, Integer, Integer> {
+	private class ServerUploadTask extends AsyncTask<File, Integer, Integer> {
 		@Override
-		 protected Integer doInBackground(File... pictureFile) {
-			 HttpClient client = new DefaultHttpClient();
-			HttpPost post = new HttpPost(SERVER_URL);
+		protected Integer doInBackground(File... pictureFile) {
+			HttpClient client = new DefaultHttpClient();
+			HttpPost post = new HttpPost(SERVER_POST_URL);
 			HttpContext context = new BasicHttpContext();
-			
+
 			String img_str = convertBase64(pictureFile[0]);
-			
+
 			ArrayList<NameValuePair> postParameters = new ArrayList<NameValuePair>();
 			postParameters.add(new BasicNameValuePair("username", USERNAME));
 			postParameters.add(new BasicNameValuePair("post", img_str));
-			
+
 			try {
-//			        FileEntity entity = new FileEntity((java.io.File)pictureFile[0], "image/jpg");
-//			        post.setEntity(entity);
+				// FileEntity entity = new
+				// FileEntity((java.io.File)pictureFile[0], "image/jpg");
+				// post.setEntity(entity);
 
-					post.setEntity(new UrlEncodedFormEntity(postParameters));
+				post.setEntity(new UrlEncodedFormEntity(postParameters));
 
-			        HttpResponse response = client.execute(post, context);
-			    } catch (IOException exc) {
-			        Log.e("Conor debugs", exc.getMessage());
-			    }
-	   	 
-	   	 	Log.e("Conor debugs", "You've sent the message!!");
-	   	 	
-	   	 	return new Integer(0);
-		 }
+				HttpResponse response = client.execute(post, context);
+			} catch (IOException exc) {
+				Log.e("Conor debugs", exc.getMessage());
+			}
 
-		private String convertBase64(File file) {
-			Bitmap bitmap = BitmapFactory.decodeFile(file.getPath());
-			ByteArrayOutputStream stream = new ByteArrayOutputStream();
-			bitmap.compress(Bitmap.CompressFormat.JPEG, 30, stream);
-			byte[] byte_arr = stream.toByteArray();
-			return Base64.encodeToString(byte_arr, Base64.DEFAULT);
+			Log.e("Conor debugs", "You've sent the message!!");
+
+			return new Integer(0);
 		}
 
 		@Override
@@ -217,6 +253,18 @@ public class MainActivity extends Activity {
 		@Override
 		protected void onPostExecute(Integer result) {
 		}
+	}
+
+	private static File convertBase64(String s) {
+
+	}
+
+	private static String convertBase64(File file) {
+		Bitmap bitmap = BitmapFactory.decodeFile(file.getPath());
+		ByteArrayOutputStream stream = new ByteArrayOutputStream();
+		bitmap.compress(Bitmap.CompressFormat.JPEG, 30, stream);
+		byte[] byte_arr = stream.toByteArray();
+		return Base64.encodeToString(byte_arr, Base64.DEFAULT);
 	}
 
 }
