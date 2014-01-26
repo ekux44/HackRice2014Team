@@ -9,6 +9,9 @@ import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.Window;
+import android.view.WindowManager;
+
 import com.google.android.glass.media.CameraManager;
 
 public class MainActivity extends Activity {
@@ -18,6 +21,12 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		
+		
 		setContentView(R.layout.activity_main);
 		
 		takePicture();
@@ -43,6 +52,8 @@ public class MainActivity extends Activity {
 	        String picturePath = data.getStringExtra(
 	                CameraManager.EXTRA_PICTURE_FILE_PATH);
 	        processPictureWhenReady(picturePath);
+
+			this.finish();
 	    }
 
 	    super.onActivityResult(requestCode, resultCode, data);
@@ -66,6 +77,7 @@ public class MainActivity extends Activity {
 			
 			
 			//TODO send to server or Google Drive
+			
 	    } else {
 	        // The file does not exist yet. Before starting the file observer, you
 	        // can update your UI to let the user know that the application is
