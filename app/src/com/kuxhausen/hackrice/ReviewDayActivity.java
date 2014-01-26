@@ -38,7 +38,7 @@ public class ReviewDayActivity extends Activity {
 		
 		setContentView(R.layout.activity_review);
 		
-		iOne = (ImageView) this.findViewById(R.id.imageView1);
+		iOne = (ImageView) this.findViewById(R.id.snapRouletteAct);
 	}
 	public void onResume(){
 		super.onResume();

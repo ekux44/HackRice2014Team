@@ -56,7 +56,6 @@ public class MainActivity extends Activity {
 
 	private static final String USERNAME = "alabount";
 	private static final String SERVER_POST_URL = "http://192.168.43.159/posts/add";
-	private static final String SERVER_GET_URL = "http://192.168.43.159/posts/getRandom";
 
 	private static final int TAKE_PICTURE_REQUEST = 1;
 
@@ -77,7 +76,6 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		takePicture();
-		//getRandomPic();
 
 	}
 
@@ -169,18 +167,7 @@ public class MainActivity extends Activity {
 		upload.execute(pictureFile);
 	}
 
-	private void getRandomPic() {
-		File randDir = this.getFilesDir();
-		File randFile = new File(randDir,"random.jpg");
-		try {
-			Log.e("Steven Debugs", randFile.getCanonicalPath());
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		ServerGetRandomTask getRandom = new ServerGetRandomTask();
-		getRandom.execute(randFile);
-	}
+
 		
 	/*private void uploadToDropbox(File pictureFile) {
 
@@ -215,49 +202,7 @@ public class MainActivity extends Activity {
 		}
 	}
 */
-	private class ServerGetRandomTask extends AsyncTask<File, Integer, Integer> {
-
-		@Override
-		protected Integer doInBackground(File... file) {
-			
-			final AndroidHttpClient client = AndroidHttpClient.newInstance("Android");
-		    final HttpGet getRequest = new HttpGet(SERVER_GET_URL);
-
-		    try {
-		        HttpResponse response = client.execute(getRequest);
-		        final int statusCode = response.getStatusLine().getStatusCode();
-		        if (statusCode != HttpStatus.SC_OK) { 
-		            Log.w("ImageDownloader", "Error " + statusCode + " while retrieving bitmap from " + SERVER_GET_URL); 
-		            return null;
-		        }
-		        
-		        final HttpEntity entity = response.getEntity();
-		        if (entity != null) {
-		            InputStream inputStream = null;
-		            try {
-		                inputStream = entity.getContent(); 
-		                final Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
-		                Log.w("ImageDownloader","We got it!");
-		                //display or do something with bitmap
-		            } finally {
-		                if (inputStream != null) {
-		                    inputStream.close();  
-		                }
-		                entity.consumeContent();
-		            }
-		        }
-		    } catch (Exception e) {
-		        // Could provide a more explicit error message for IOException or IllegalStateException
-		        getRequest.abort();
-		        Log.w("ImageDownloader", "Error while retrieving bitmap from " + SERVER_GET_URL);
-		    } finally {
-		        if (client != null) {
-		            client.close();
-		        }
-		    }
-		    return new Integer(0);
-		}
-	}
+	
 
 	private class ServerUploadTask extends AsyncTask<File, Integer, Integer> {
 		@Override
