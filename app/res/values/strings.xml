@@ -6,4 +6,5 @@
     <string name="hello_world">Hello world!</string>
 	<string name="glass_hack_rice">hack rice</string>
 	<string name="glass_review_my_day">review my day</string>
+	<string name="menu_keep">keep</string>
 </resources>
