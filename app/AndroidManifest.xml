@@ -54,12 +54,6 @@
 
         <activity
             android:name="com.kuxhausen.hackrice.ReviewDayActivity" android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
-            </intent-filter>
-            <meta-data
-                android:name="com.google.android.glass.VoiceTrigger"
-                android:resource="@xml/voice_trigger_review" />
         </activity>
         
         <provider
@@ -71,6 +65,12 @@
         <activity
             android:name="SnapRouletteOfferActivity" 
             android:theme="@style/AppTheme">
+         <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger_review" />
         </activity>
         <activity
             android:name="SnapRouletteActivity" 
