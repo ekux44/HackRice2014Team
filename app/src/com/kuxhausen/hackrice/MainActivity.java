@@ -92,8 +92,6 @@ public class MainActivity extends Activity {
 	        String picturePath = data.getStringExtra(
 	                CameraManager.EXTRA_PICTURE_FILE_PATH);
 	        processPictureWhenReady(picturePath);
-
-			this.finish();
 	    }
 	}
 
@@ -118,6 +116,8 @@ public class MainActivity extends Activity {
 			
 			
 			sendToServer(pictureFile);
+			
+			this.finish();
 		} else {
 			// The file does not exist yet. Before starting the file observer,
 			// you

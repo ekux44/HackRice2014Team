@@ -39,7 +39,9 @@ public class ReviewDayActivity extends Activity {
 		setContentView(R.layout.activity_review);
 		
 		iOne = (ImageView) this.findViewById(R.id.imageView1);
-		
+	}
+	public void onResume(){
+		super.onResume();
 		String[] pictureColumns = { DatabaseHelper.PictureDB.FILE_PATH, DatabaseHelper.PictureDB.PICTURE_ID };
 		pictureCursor = this.getContentResolver().query(DatabaseHelper.PictureDB.PICTURES_URI, pictureColumns, null, null, null );
 		
@@ -60,6 +62,8 @@ public class ReviewDayActivity extends Activity {
           return false;
     }
 	public void loadImage(int number){
+		Log.e("loadImage", "totalCount:  "+pictureCursor.getCount());
+		
 		if(pictureCursor.moveToPosition(number)){
 		
 			String filepath = pictureCursor.getString(0); 
