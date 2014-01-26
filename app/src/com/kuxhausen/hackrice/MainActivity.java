@@ -2,6 +2,17 @@ package com.kuxhausen.hackrice;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.FileEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.protocol.BasicHttpContext;
+import org.apache.http.protocol.HttpContext;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,6 +39,10 @@ public class MainActivity extends Activity {
     private static final String appKey = "p78hpiyefxd4p9z";
     private static final String appSecret = "hwjzoa1qoxjoqft";
     private static final int REQUEST_LINK_TO_DBX = 0;
+    
+    private static final String USERNAME = "alabount";
+    private static final String FILE = "post";
+    private static final String SERVER_URL = "http://10.210.78.112/posts/add";
 
     private DbxAccountManager mDbxAcctMgr;
 	
@@ -140,5 +155,28 @@ public class MainActivity extends Activity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	private boolean sendToServer(String picturePath) {
+		File pictureFile = new File(picturePath);
+		
+		HttpClient client = new DefaultHttpClient();
+		HttpPost post = new HttpPost(SERVER_URL);
+		HttpContext context = new BasicHttpContext();
+		
+		ArrayList<NameValuePair> postParameters = new ArrayList<NameValuePair>();
+		postParameters.add(new BasicNameValuePair("username", USERNAME));
+		postParameters.add(new BasicNameValuePair("file", FILE));
+		
+		 try {
+		        FileEntity entity = new FileEntity(pictureFile, "WILD_CARD");
+		        post.setEntity(entity);
+
+		        HttpResponse response = client.execute(post, context);
+		    } catch (IOException exc) {
+		        Log.e("Conor debugs", exc.getMessage());
+		        return false;
+		    }
+		return true;
 	}
 }
