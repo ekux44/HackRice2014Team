@@ -1,0 +1,1392 @@
+2014-01-25 18:46:51 Error: [MissingControllerException] Controller class Index.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Index.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 19:46:35 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 19:46:38 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 19:47:58 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 20:09:29 Error: Fatal Error (4): syntax error, unexpected T_ARRAY in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/add.ctp, line 2]
+2014-01-25 20:09:29 Error: [FatalErrorException] syntax error, unexpected T_ARRAY
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 2, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 2, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-25 20:09:51 Error: [MissingHelperException] Helper class formHelper could not be found.
+Exception Attributes: array (
+  'class' => 'formHelper',
+  'plugin' => false,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('form')
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(818): HelperCollection->__isset('form')
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/add.ctp(1): View->__get('form')
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(929): include('/home/dufflebum...')
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(891): View->_evaluate('/home/dufflebum...', Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(460): View->_render('/home/dufflebum...')
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-25 20:09:53 Error: [MissingHelperException] Helper class formHelper could not be found.
+Exception Attributes: array (
+  'class' => 'formHelper',
+  'plugin' => false,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('form')
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(818): HelperCollection->__isset('form')
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/add.ctp(1): View->__get('form')
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(929): include('/home/dufflebum...')
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(891): View->_evaluate('/home/dufflebum...', Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(460): View->_render('/home/dufflebum...')
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-25 20:10:19 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(3474): ConnectionManager::getDataSource('default')
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(3496): Model->setSource('posts')
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(1355): Model->getDataSource()
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('Post', 'fields')
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/add.ctp(1): FormHelper->create('Post')
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(929): include('/home/dufflebum...')
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(891): View->_evaluate('/home/dufflebum...', Array)
+#10 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(460): View->_render('/home/dufflebum...')
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#12 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#13 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-25 20:11:08 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(3474): ConnectionManager::getDataSource('default')
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(3496): Model->setSource('posts')
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('Post', 'fields')
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/add.ctp(1): FormHelper->create('Post')
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(929): include('/home/dufflebum...')
+#10 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(891): View->_evaluate('/home/dufflebum...', Array)
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(460): View->_render('/home/dufflebum...')
+#12 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#13 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#14 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#15 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-25 20:11:30 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[42000] [1049] Unknown database \'database_name\'',
+  'enabled' => true,
+)
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(3474): ConnectionManager::getDataSource('default')
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(3496): Model->setSource('posts')
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/Helper/FormHelper.php(199): Model->schema()
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/Helper/FormHelper.php(451): FormHelper->_introspectModel('Post', 'fields')
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/add.ctp(1): FormHelper->create('Post')
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(929): include('/home/dufflebum...')
+#10 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(891): View->_evaluate('/home/dufflebum...', Array)
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(460): View->_render('/home/dufflebum...')
+#12 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#13 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#14 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#15 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-01-25 20:12:56 Error: [CakeException] Missing field name for FormHelper::close
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/add.ctp(3): FormHelper->__call('close', Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/add.ctp(3): FormHelper->close()
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(929): include('/home/dufflebum...')
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(891): View->_evaluate('/home/dufflebum...', Array)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(460): View->_render('/home/dufflebum...')
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-01-25 20:12:58 Error: [CakeException] Missing field name for FormHelper::close
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/add.ctp(3): FormHelper->__call('close', Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/add.ctp(3): FormHelper->close()
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(929): include('/home/dufflebum...')
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(891): View->_evaluate('/home/dufflebum...', Array)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(460): View->_render('/home/dufflebum...')
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-01-25 20:12:59 Error: [CakeException] Missing field name for FormHelper::close
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/add.ctp(3): FormHelper->__call('close', Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/add.ctp(3): FormHelper->close()
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(929): include('/home/dufflebum...')
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(891): View->_evaluate('/home/dufflebum...', Array)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(460): View->_render('/home/dufflebum...')
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-01-25 20:36:33 Error: [MissingControllerException] Controller class PhpmyadminController could not be found.
+Exception Attributes: array (
+  'class' => 'PhpmyadminController',
+  'plugin' => NULL,
+)
+Request URL: /phpmyadmin/themes/pmahomme/img/marked_bg.png
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 20:36:35 Error: [MissingControllerException] Controller class PhpmyadminController could not be found.
+Exception Attributes: array (
+  'class' => 'PhpmyadminController',
+  'plugin' => NULL,
+)
+Request URL: /phpmyadmin/tbl_alter.php?db=hackathon&table=posts&token=bf3e91c52c2c58b30145e406b45afe5d&goto=tbl_structure.php&back=tbl_structure.php&field=id
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 20:40:21 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_FUNCTION in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php, line 17]
+2014-01-25 20:40:21 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_FUNCTION
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 17, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 17, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-25 20:40:48 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ha...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `ha...')
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(1832): DboSource->create(Object(Post), Array, Array)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(11): Model->save(Array)
+#5 [internal function]: PostsController->add()
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-25 21:01:21 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 21:02:07 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /user/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 21:02:12 Error: Fatal Error (1): Call to a member function findAllByUsername() on a non-object in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/UsersController.php, line 9]
+2014-01-25 21:02:12 Error: [FatalErrorException] Call to a member function findAllByUsername() on a non-object
+Request URL: /users/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/dufflebum...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/dufflebum...', 9, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/dufflebum...', 9, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-25 21:02:31 Error: Fatal Error (1): Call to a member function findByUsername() on a non-object in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/UsersController.php, line 7]
+2014-01-25 21:02:31 Error: [FatalErrorException] Call to a member function findByUsername() on a non-object
+Request URL: /users/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/home/dufflebum...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/home/dufflebum...', 7, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/home/dufflebum...', 7, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-25 21:02:45 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Post.user_id' in 'on clause'
+Request URL: /users/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2900): DboSource->read(Object(Post), Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2872): Model->_readDataSource('all', Array)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(592): Model->find('all', Array)
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(800): DboSource->query('findAllByUserna...', Array, Object(Post))
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/UsersController.php(10): Model->__call('findAllByUserna...', Array)
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/UsersController.php(10): Post->findAllByUsername('alabount')
+#10 [internal function]: UsersController->show_feed()
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-25 21:03:41 Error: Fatal Error (1): Cannot access empty property in [/home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php, line 1048]
+2014-01-25 21:03:41 Error: [FatalErrorException] Cannot access empty property
+Request URL: /users/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/home/dufflebum...', 1048)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/home/dufflebum...', 1048, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/home/dufflebum...', 1048, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-25 21:09:02 Error: Fatal Error (1): Cannot access empty property in [/home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php, line 1048]
+2014-01-25 21:09:02 Error: [FatalErrorException] Cannot access empty property
+Request URL: /users/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/home/dufflebum...', 1048)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/home/dufflebum...', 1048, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/home/dufflebum...', 1048, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-25 21:09:38 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'on clause'
+Request URL: /users/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2900): DboSource->read(Object(Post), Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2872): Model->_readDataSource('all', Array)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(592): Model->find('all', Array)
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(800): DboSource->query('findAllByUserna...', Array, Object(Post))
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/UsersController.php(10): Model->__call('findAllByUserna...', Array)
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/UsersController.php(10): Post->findAllByUsername('alabount')
+#10 [internal function]: UsersController->show_feed()
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-25 21:14:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'on clause'
+Request URL: /users/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2900): DboSource->read(Object(Post), Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2872): Model->_readDataSource('all', Array)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(592): Model->find('all', Array)
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(800): DboSource->query('findAllByUserna...', Array, Object(Post))
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/UsersController.php(10): Model->__call('findAllByUserna...', Array)
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/UsersController.php(10): Post->findAllByUsername('alabount')
+#10 [internal function]: UsersController->show_feed()
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-25 21:14:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.id' in 'on clause'
+Request URL: /users/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Post`.`...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Post`.`...', Array, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Post`.`...', false)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2900): DboSource->read(Object(Post), Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2872): Model->_readDataSource('all', Array)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(592): Model->find('all', Array)
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(800): DboSource->query('findAllByUserna...', Array, Object(Post))
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/UsersController.php(10): Model->__call('findAllByUserna...', Array)
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/UsersController.php(10): Post->findAllByUsername('alabount')
+#10 [internal function]: UsersController->show_feed()
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-01-25 21:14:57 Error: Fatal Error (1): Call to undefined function combine() in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/UsersController.php, line 11]
+2014-01-25 21:14:57 Error: [FatalErrorException] Call to undefined function combine()
+Request URL: /users/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/dufflebum...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/dufflebum...', 11, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/dufflebum...', 11, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-25 21:15:19 Error: Fatal Error (1): Call to undefined function combine() in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/UsersController.php, line 11]
+2014-01-25 21:15:19 Error: [FatalErrorException] Call to undefined function combine()
+Request URL: /users/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/home/dufflebum...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/home/dufflebum...', 11, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/home/dufflebum...', 11, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-25 21:35:32 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/user_imgs/alabount/puppies2.jpg
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 21:35:32 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/user_imgs/alabount/puppies.jpg
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 21:35:32 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/user_imgs/alabount/puppy1.jpg
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 21:35:32 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/user_imgs/alabount/puppies2.jpg
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 21:35:34 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/user_imgs/alabount/puppies2.jpg
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 21:35:34 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/user_imgs/alabount/puppies.jpg
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 21:35:34 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/user_imgs/alabount/puppy1.jpg
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 21:35:34 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/user_imgs/alabount/puppies2.jpg
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 21:35:34 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/user_imgs/alabount/puppies.jpg
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-25 23:26:48 Error: [MissingViewException] View file "/home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/get_random.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Posts/get_random.ctp',
+)
+Request URL: /posts/getRandom
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-01-25 23:34:22 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Friends.username2' in 'field list'
+Request URL: /posts/getRandom/01-24-14/alabount
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Friends...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Friends...', Array, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Friends...', false)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2900): DboSource->read(Object(AppModel), Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2872): Model->_readDataSource('list', Array)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(37): Model->find('list', Array)
+#7 [internal function]: PostsController->getRandom('01-24-14', 'alabount')
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-25 23:34:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Friends.username1' in 'field list'
+Request URL: /posts/getRandom/01-24-14/alabount
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Friends...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Friends...', Array, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Friends...', false)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2900): DboSource->read(Object(AppModel), Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2872): Model->_readDataSource('list', Array)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(37): Model->find('list', Array)
+#7 [internal function]: PostsController->getRandom('01-24-14', 'alabount')
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-25 23:34:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Friends.username1' in 'field list'
+Request URL: /posts/getRandom/01-24-14/alabount
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Friends...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Friends...', Array, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Friends...', false)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2900): DboSource->read(Object(AppModel), Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2872): Model->_readDataSource('list', Array)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(37): Model->find('list', Array)
+#7 [internal function]: PostsController->getRandom('01-24-14', 'alabount')
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-25 23:37:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Friends.username1' in 'field list'
+Request URL: /posts/getRandom/01-24-14/alabount
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Friends...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Friends...', Array, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Friends...', false)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2900): DboSource->read(Object(AppModel), Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2872): Model->_readDataSource('list', Array)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(37): Model->find('list', Array)
+#7 [internal function]: PostsController->getRandom('01-24-14', 'alabount')
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-25 23:38:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Friends.username1' in 'field list'
+Request URL: /posts/getRandom/01-24-14/alabount
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Friends...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Friends...', Array, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Friends...', false)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2900): DboSource->read(Object(Friend), Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2872): Model->_readDataSource('list', Array)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(37): Model->find('list', Array)
+#7 [internal function]: PostsController->getRandom('01-24-14', 'alabount')
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-25 23:38:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Friends.username1' in 'field list'
+Request URL: /posts/getRandom/01-24-14/alabount
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Friends...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Friends...', Array, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Friends...', false)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2900): DboSource->read(Object(Friend), Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2872): Model->_readDataSource('list', Array)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(37): Model->find('list', Array)
+#7 [internal function]: PostsController->getRandom('01-24-14', 'alabount')
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-25 23:38:10 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Friends.username1' in 'field list'
+Request URL: /posts/getRandom/01-24-14/alabount
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Friends...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Friends...', Array, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Friends...', false)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2900): DboSource->read(Object(Friend), Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2872): Model->_readDataSource('list', Array)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(37): Model->find('list', Array)
+#7 [internal function]: PostsController->getRandom('01-24-14', 'alabount')
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-25 23:38:11 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Friends.username1' in 'field list'
+Request URL: /posts/getRandom/01-24-14/alabount
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Friends...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(665): DboSource->execute('SELECT `Friends...', Array, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Friends...', false)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2900): DboSource->read(Object(Friend), Array)
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(2872): Model->_readDataSource('list', Array)
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(37): Model->find('list', Array)
+#7 [internal function]: PostsController->getRandom('01-24-14', 'alabount')
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#11 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-01-25 23:41:54 Error: [MissingActionException] Action PostsController::get() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'get',
+)
+Request URL: /posts/get?friend=alabount%3Fdate%3D01-24-14
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 00:14:10 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /post/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 00:15:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`hackathon`.`posts`, CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`username`) REFERENCES `users` (`username`))
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ha...', Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Datasource/DboSource.php(1004): DboSource->execute('INSERT INTO `ha...')
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Model/Model.php(1832): DboSource->create(Object(Post), Array, Array)
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(17): Model->save(Array)
+#5 [internal function]: PostsController->add()
+#6 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#9 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-01-26 00:33:33 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php, line 9]
+2014-01-26 00:33:33 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /posts/getRandom/2014-1-25/
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 9, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 9, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 00:33:59 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php, line 9]
+2014-01-26 00:33:59 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /posts/getRandom/2014-1-25/
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 9, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 9, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 00:37:24 Error: Fatal Error (4): syntax error, unexpected ';' in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php, line 31]
+2014-01-26 00:37:24 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /posts/getRandom/2014-1-25/
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 31, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 31, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 01:05:57 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php, line 20]
+2014-01-26 01:05:57 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 20, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 20, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 01:08:11 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php, line 20]
+2014-01-26 01:08:11 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 20, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 20, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 01:10:16 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php, line 20]
+2014-01-26 01:10:16 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 20, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 20, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 01:10:20 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php, line 20]
+2014-01-26 01:10:20 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 20, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 20, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 01:10:53 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php, line 25]
+2014-01-26 01:10:53 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING
+Request URL: /posts/add
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 25, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 25, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 01:19:00 Error: [MissingControllerException] Controller class UserImgsController could not be found.
+Exception Attributes: array (
+  'class' => 'UserImgsController',
+  'plugin' => NULL,
+)
+Request URL: /user_imgs/alabount/0.52146200
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 01:20:21 Error: [MissingControllerException] Controller class UserImgsController could not be found.
+Exception Attributes: array (
+  'class' => 'UserImgsController',
+  'plugin' => NULL,
+)
+Request URL: /user_imgs/alabount/0.52146200%201390720425.jpg
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 02:04:09 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 02:59:18 Error: Fatal Error (4): syntax error, unexpected '[' in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/View/Users/show_feed.ctp, line 23]
+2014-01-26 02:59:18 Error: [FatalErrorException] syntax error, unexpected '['
+Request URL: /users/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 23, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 23, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 03:08:22 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Model/Post.php, line 4]
+2014-01-26 03:08:22 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /users/show_feed
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 4, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 4, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 03:08:26 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Model/Post.php, line 4]
+2014-01-26 03:08:26 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /posts/getRandom
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/dufflebum...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/dufflebum...', 4, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/dufflebum...', 4, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 04:30:08 Error: [MissingControllerException] Controller class SdfsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'SdfsdfController',
+  'plugin' => NULL,
+)
+Request URL: /sdfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 04:30:10 Error: [MissingControllerException] Controller class SdfsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'SdfsdfController',
+  'plugin' => NULL,
+)
+Request URL: /sdfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 04:32:25 Error: [MissingControllerException] Controller class SdfsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'SdfsdfController',
+  'plugin' => NULL,
+)
+Request URL: /sdfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 04:32:26 Error: [MissingControllerException] Controller class SdfsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'SdfsdfController',
+  'plugin' => NULL,
+)
+Request URL: /sdfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 04:32:29 Error: [MissingControllerException] Controller class SdfsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'SdfsdfController',
+  'plugin' => NULL,
+)
+Request URL: /sdfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 04:32:29 Error: [MissingControllerException] Controller class SdfsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'SdfsdfController',
+  'plugin' => NULL,
+)
+Request URL: /sdfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 04:32:30 Error: [MissingControllerException] Controller class SdfsdfController could not be found.
+Exception Attributes: array (
+  'class' => 'SdfsdfController',
+  'plugin' => NULL,
+)
+Request URL: /sdfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 04:37:29 Error: [MissingActionException] Action UsersController::asdfsggd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'asdfsggd',
+)
+Request URL: /users/asdfsggd
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 04:37:29 Error: [MissingActionException] Action UsersController::asdfsggd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'asdfsggd',
+)
+Request URL: /users/asdfsggd
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 04:41:52 Error: [MissingActionException] Action UsersController::afdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'afdf',
+)
+Request URL: /users/afdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 04:41:52 Error: [MissingActionException] Action UsersController::asdfsggd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'asdfsggd',
+)
+Request URL: /users/asdfsggd
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 04:41:56 Error: [MissingActionException] Action UsersController::afdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'afdf',
+)
+Request URL: /users/afdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 04:41:56 Error: [MissingActionException] Action UsersController::asdfsggd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'asdfsggd',
+)
+Request URL: /users/asdfsggd
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 04:43:11 Error: [MissingActionException] Action UsersController::afdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'afdf',
+)
+Request URL: /users/afdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 04:43:11 Error: [MissingActionException] Action UsersController::asdfsggd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'asdfsggd',
+)
+Request URL: /users/asdfsggd
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 04:43:13 Error: [MissingActionException] Action UsersController::afdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'afdf',
+)
+Request URL: /users/afdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 04:43:13 Error: [MissingActionException] Action UsersController::asdfsggd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'asdfsggd',
+)
+Request URL: /users/asdfsggd
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 04:47:31 Error: [MissingActionException] Action UsersController::dsfdfs() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'dsfdfs',
+)
+Request URL: /users/dsfdfs
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:38:59 Error: [MissingControllerException] Controller class UController could not be found.
+Exception Attributes: array (
+  'class' => 'UController',
+  'plugin' => NULL,
+)
+Request URL: /u
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 05:39:00 Error: [MissingControllerException] Controller class UsController could not be found.
+Exception Attributes: array (
+  'class' => 'UsController',
+  'plugin' => NULL,
+)
+Request URL: /us
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 05:39:00 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:39:01 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users/
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:39:02 Error: [MissingActionException] Action UsersController::s() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 's',
+)
+Request URL: /users/s
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:39:02 Error: [MissingActionException] Action UsersController::sho() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'sho',
+)
+Request URL: /users/sho
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:39:04 Error: [MissingActionException] Action UsersController::show_() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'show_',
+)
+Request URL: /users/show_
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:39:06 Error: [MissingActionException] Action UsersController::show_f() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'show_f',
+)
+Request URL: /users/show_f
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:39:06 Error: [MissingActionException] Action UsersController::show_fee() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'show_fee',
+)
+Request URL: /users/show_fee
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:44:38 Error: [MissingControllerException] Controller class UController could not be found.
+Exception Attributes: array (
+  'class' => 'UController',
+  'plugin' => NULL,
+)
+Request URL: /u
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 05:44:38 Error: [MissingControllerException] Controller class UseController could not be found.
+Exception Attributes: array (
+  'class' => 'UseController',
+  'plugin' => NULL,
+)
+Request URL: /use
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 05:44:39 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:44:41 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /users/
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:44:42 Error: [MissingActionException] Action UsersController::sh() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'sh',
+)
+Request URL: /users/sh
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:44:43 Error: [MissingActionException] Action UsersController::show() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'show',
+)
+Request URL: /users/show
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:44:44 Error: [MissingActionException] Action UsersController::show_() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'show_',
+)
+Request URL: /users/show_
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 05:44:45 Error: [MissingActionException] Action UsersController::show_f() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'show_f',
+)
+Request URL: /users/show_f
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 07:54:21 Error: [MissingActionException] Action UsersController::getRandom() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'getRandom',
+)
+Request URL: /users/getRandom
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 07:55:57 Error: Fatal Error (1): Function name must be a string in [/home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php, line 53]
+2014-01-26 07:55:57 Error: [FatalErrorException] Function name must be a string
+Request URL: /posts/getRandom
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Function name m...', '/home/dufflebum...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Function name m...', '/home/dufflebum...', 53, Array)
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Function name m...', '/home/dufflebum...', 53, Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-26 07:57:35 Error: [MissingControllerException] Controller class UserImgsController could not be found.
+Exception Attributes: array (
+  'class' => 'UserImgsController',
+  'plugin' => NULL,
+)
+Request URL: /user_imgs/getRandom
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 07:58:04 Error: [MissingControllerException] Controller class UserImgsController could not be found.
+Exception Attributes: array (
+  'class' => 'UserImgsController',
+  'plugin' => NULL,
+)
+Request URL: /user_imgs/alabount/0.75601000
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 07:58:09 Error: [MissingControllerException] Controller class UserImgsController could not be found.
+Exception Attributes: array (
+  'class' => 'UserImgsController',
+  'plugin' => NULL,
+)
+Request URL: /user_imgs/alabount/0.40217000
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 07:58:52 Error: [MissingControllerException] Controller class UserImgsController could not be found.
+Exception Attributes: array (
+  'class' => 'UserImgsController',
+  'plugin' => NULL,
+)
+Request URL: /user_imgs/getRandom
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 07:58:57 Error: [MissingControllerException] Controller class PostssController could not be found.
+Exception Attributes: array (
+  'class' => 'PostssController',
+  'plugin' => NULL,
+)
+Request URL: /postss/getRandom
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 08:03:06 Error: [NotFoundException] The requested file /home/dufflebum/hackRice/HackRice2014Team/webClient/app//user_imgs/alabount/0.83745800 1390744099.jpg was not found or not readable
+Request URL: /posts/getRandom
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(53): CakeResponse->file('/user_imgs/alab...')
+#1 [internal function]: PostsController->getRandom()
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-26 08:57:16 Error: [NotFoundException] The requested file /home/dufflebum/hackRice/HackRice2014Team/webClient/app//home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/ was not found or not readable
+Request URL: /posts/getRandom/%27%20or%20True==True
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(53): CakeResponse->file('/home/dufflebum...')
+#1 [internal function]: PostsController->getRandom('' or True==True')
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-26 08:58:24 Error: [NotFoundException] The requested file /home/dufflebum/hackRice/HackRice2014Team/webClient/app//home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/ was not found or not readable
+Request URL: /posts/getRandom/%27debug(%22hello%22)
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(53): CakeResponse->file('/home/dufflebum...')
+#1 [internal function]: PostsController->getRandom(''debug("hello")')
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-26 08:58:41 Error: [NotFoundException] The requested file /home/dufflebum/hackRice/HackRice2014Team/webClient/app//home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/ was not found or not readable
+Request URL: /posts/getRandom/%27debug(%27hello%27)
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(53): CakeResponse->file('/home/dufflebum...')
+#1 [internal function]: PostsController->getRandom(''debug('hello')')
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-26 11:20:00 Error: [MissingControllerException] Controller class UserImgsController could not be found.
+Exception Attributes: array (
+  'class' => 'UserImgsController',
+  'plugin' => NULL,
+)
+Request URL: /user_imgs/alabount/0.26044200%201390755828.jpg
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-26 11:22:47 Error: [MissingActionException] Action UsersController::sadfsdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'sadfsdf',
+)
+Request URL: /users/sadfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 11:23:10 Error: [MissingActionException] Action UsersController::sadfsdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'sadfsdf',
+)
+Request URL: /users/sadfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 11:24:28 Error: [NotFoundException] The requested file /home/dufflebum/hackRice/HackRice2014Team/webClient/app//home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/sadfsdf was not found or not readable
+Request URL: /posts/getRandom
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/Controller/PostsController.php(53): CakeResponse->file('/home/dufflebum...')
+#1 [internal function]: PostsController->getRandom()
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#3 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#5 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-01-26 11:25:16 Error: [MissingActionException] Action UsersController::sadfsdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'sadfsdf',
+)
+Request URL: /users/sadfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 11:25:39 Error: [MissingActionException] Action UsersController::sadfsdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'sadfsdf',
+)
+Request URL: /users/sadfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 11:26:07 Error: [MissingActionException] Action UsersController::sadfsdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'sadfsdf',
+)
+Request URL: /users/sadfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 11:26:07 Error: [MissingActionException] Action UsersController::sadfsdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'sadfsdf',
+)
+Request URL: /users/sadfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 11:26:10 Error: [MissingActionException] Action UsersController::show_explore() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'show_explore',
+)
+Request URL: /users/show_explore
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 11:26:28 Error: [MissingActionException] Action UsersController::show_explore() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'show_explore',
+)
+Request URL: /users/show_explore
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 11:26:30 Error: [MissingActionException] Action UsersController::sadfsdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'sadfsdf',
+)
+Request URL: /users/sadfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 11:26:32 Error: [MissingActionException] Action UsersController::sadfsdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'sadfsdf',
+)
+Request URL: /users/sadfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-26 11:26:33 Error: [MissingActionException] Action UsersController::sadfsdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'sadfsdf',
+)
+Request URL: /users/sadfsdf
+Stack Trace:
+#0 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /home/dufflebum/hackRice/HackRice2014Team/webClient/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/dufflebum/hackRice/HackRice2014Team/webClient/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
