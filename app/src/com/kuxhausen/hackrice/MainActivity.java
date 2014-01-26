@@ -1,25 +1,42 @@
 package com.kuxhausen.hackrice;
 
 import java.io.File;
+import java.io.IOException;
 
+import android.app.Activity;
+import android.content.Intent;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.os.FileObserver;
 import android.provider.MediaStore;
-import android.app.Activity;
-import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
+
+import com.dropbox.sync.android.DbxAccountManager;
+import com.dropbox.sync.android.DbxException;
+import com.dropbox.sync.android.DbxException.Unauthorized;
+import com.dropbox.sync.android.DbxFile;
+import com.dropbox.sync.android.DbxFileSystem;
+import com.dropbox.sync.android.DbxPath;
 import com.google.android.glass.media.CameraManager;
+import com.google.api.services.drive.Drive;
 
 public class MainActivity extends Activity {
 
 	final static int intentRequestCode = 1;
+	
+    private static final String appKey = "p78hpiyefxd4p9z";
+    private static final String appSecret = "hwjzoa1qoxjoqft";
+    private static final int REQUEST_LINK_TO_DBX = 0;
+
+    private DbxAccountManager mDbxAcctMgr;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		
+	    mDbxAcctMgr = DbxAccountManager.getInstance(getApplicationContext(), appKey, appSecret);
 		
 		takePicture();
 	}
@@ -54,6 +71,7 @@ public class MainActivity extends Activity {
 
 	    if (pictureFile.exists()) {
 	        // The picture is ready; process it.
+	    	uploadToDropbox(pictureFile);
 	    } else {
 	        // The file does not exist yet. Before starting the file observer, you
 	        // can update your UI to let the user know that the application is
@@ -92,5 +110,35 @@ public class MainActivity extends Activity {
 	        };
 	        observer.startWatching();
 	    }
+	}
+	
+	private void uploadToDropbox(File pictureFile) {
+
+        mDbxAcctMgr.startLink((Activity)this, REQUEST_LINK_TO_DBX);
+		
+        try {
+            DbxPath testPath = new DbxPath(DbxPath.ROOT, pictureFile.getName());
+			DbxFileSystem dbxFs = DbxFileSystem.forAccount(mDbxAcctMgr.getLinkedAccount());
+			
+			if (!dbxFs.exists(testPath)) {
+                DbxFile testFile = dbxFs.create(testPath);
+                try {
+//                    testFile.writeString(TEST_DATA);
+                    testFile.writeFromExistingFile(pictureFile,false);
+                    
+                } finally {
+                    testFile.close();
+                }
+            }
+		} catch (Unauthorized e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (DbxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
