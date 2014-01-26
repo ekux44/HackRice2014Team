@@ -2,18 +2,19 @@ package com.kuxhausen.hackrice;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
@@ -24,6 +25,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.net.http.AndroidHttpClient;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.FileObserver;
@@ -149,7 +151,14 @@ public class MainActivity extends Activity {
 	}
 
 	private void getRandomPic() {
-		File randFile = new File("random.jpg");
+		File randDir = this.getFilesDir();
+		File randFile = new File(randDir,"random.jpg");
+		try {
+			Log.e("Steven Debugs", randFile.getCanonicalPath());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		ServerGetRandomTask getRandom = new ServerGetRandomTask();
 		getRandom.execute(randFile);
 	}
@@ -191,27 +200,44 @@ public class MainActivity extends Activity {
 
 		@Override
 		protected Integer doInBackground(File... file) {
-			try {
-				URL url = new URL(SERVER_GET_URL);
-				HttpURLConnection conn = (HttpURLConnection) url
-						.openConnection();
+			
+			final AndroidHttpClient client = AndroidHttpClient.newInstance("Android");
+		    final HttpGet getRequest = new HttpGet(SERVER_GET_URL);
 
-				InputStream is = conn.getInputStream();
-				Bitmap img = BitmapFactory.decodeStream(is);
-
-				FileOutputStream out = new FileOutputStream(file[0]);
-				img.compress(Bitmap.CompressFormat.JPEG, 90, out);
-				out.close();
-
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-			return null;
+		    try {
+		        HttpResponse response = client.execute(getRequest);
+		        final int statusCode = response.getStatusLine().getStatusCode();
+		        if (statusCode != HttpStatus.SC_OK) { 
+		            Log.w("ImageDownloader", "Error " + statusCode + " while retrieving bitmap from " + SERVER_GET_URL); 
+		            return null;
+		        }
+		        
+		        final HttpEntity entity = response.getEntity();
+		        if (entity != null) {
+		            InputStream inputStream = null;
+		            try {
+		                inputStream = entity.getContent(); 
+		                final Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
+		                Log.w("ImageDownloader","We got it!");
+		                
+		                writeImage(bitmap,file[0]);
+		            } finally {
+		                if (inputStream != null) {
+		                    inputStream.close();  
+		                }
+		                entity.consumeContent();
+		            }
+		        }
+		    } catch (Exception e) {
+		        // Could provide a more explicit error message for IOException or IllegalStateException
+		        getRequest.abort();
+		        Log.w("ImageDownloader", "Error while retrieving bitmap from " + SERVER_GET_URL);
+		    } finally {
+		        if (client != null) {
+		            client.close();
+		        }
+		    }
+		    return new Integer(0);
 		}
 	}
 
@@ -255,8 +281,12 @@ public class MainActivity extends Activity {
 		}
 	}
 
-	private static File convertBase64(String s) {
+	//private static File convertBase64(String s) {
 
+	//}
+
+	private static void writeImage(Bitmap bitmap, File file) {
+		// TODO Auto-generated method stub
 	}
 
 	private static String convertBase64(File file) {
