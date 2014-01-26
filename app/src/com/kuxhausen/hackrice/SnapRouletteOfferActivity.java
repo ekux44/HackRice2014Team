@@ -7,11 +7,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class SnapRouletOfferActivity extends Activity implements OnClickListener{
+public class SnapRouletteOfferActivity extends Activity implements OnClickListener{
 
 	public void onCreate(Bundle b){
 		super.onCreate(b);
-		this.setContentView(R.layout.activity_snap_roulet_offer);
+		this.setContentView(R.layout.activity_snap_roulette_offer);
 		
 		((Button)this.findViewById(R.id.playButton)).setOnClickListener(this);
 		((Button)this.findViewById(R.id.declineButton)).setOnClickListener(this);
@@ -21,11 +21,12 @@ public class SnapRouletOfferActivity extends Activity implements OnClickListener
 	public void onClick(View v) {
 		switch(v.getId()){
 		case R.id.playButton:
-			//todo launch snap roulette
+			Intent i1 = new Intent(this, SnapRouletteActivity.class);
+			this.startActivity(i1);
 			break;
 		case R.id.declineButton:
-			Intent i = new Intent(this, ReviewDayActivity.class);
-			this.startActivity(i);
+			Intent i2 = new Intent(this, ReviewDayActivity.class);
+			this.startActivity(i2);
 			break;
 		}
 	}
