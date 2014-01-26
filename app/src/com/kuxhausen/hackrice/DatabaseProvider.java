@@ -10,7 +10,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.provider.BaseColumns;
-import android.util.Log;
 
 public class DatabaseProvider extends ContentProvider {
 
@@ -141,15 +140,10 @@ public class DatabaseProvider extends ContentProvider {
 		// Constructs a new query builder and sets its table name
 		SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
 		
-		Log.e("wtf", "1");
-		
-		
 		switch (sUriMatcher.match(uri)) {
 		case Pictures:
 			qb.setTables(DatabaseHelper.PictureDB.TABLE_NAME);
 			qb.setProjectionMap(sPicturesProjectionMap);
-			
-			Log.e("wtf", "2");
 			
 			break;
 		default:
@@ -157,8 +151,6 @@ public class DatabaseProvider extends ContentProvider {
 			throw new IllegalArgumentException("Unknown URI " + uri);
 		}
 
-		Log.e("wtf", "3");
-		
 		SQLiteDatabase db = mOpenHelper.getReadableDatabase();
 		
 		/*
@@ -176,12 +168,9 @@ public class DatabaseProvider extends ContentProvider {
 				sortOrder 
 				);
 		
-		Log.e("wtf", "4");
-		
 		// Tells the Cursor what URI to watch, so it knows when its source data changes
 		c.setNotificationUri(getContext().getContentResolver(), uri);
 		
-		Log.e("wtf", "5, almost returned null "+(c==null));
 		return c;
 	}
 
