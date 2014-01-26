@@ -117,14 +117,15 @@ public class MainActivity extends Activity {
         mDbxAcctMgr.startLink((Activity)this, REQUEST_LINK_TO_DBX);
 		
         try {
-            DbxPath testPath = new DbxPath(DbxPath.ROOT, pictureFile.getName());
+//            DbxPath testPath = new DbxPath(DbxPath.ROOT, pictureFile.getName());
+            DbxPath testPath = new DbxPath(DbxPath.ROOT, "TESTING.TXT");
 			DbxFileSystem dbxFs = DbxFileSystem.forAccount(mDbxAcctMgr.getLinkedAccount());
 			
 			if (!dbxFs.exists(testPath)) {
                 DbxFile testFile = dbxFs.create(testPath);
                 try {
-//                    testFile.writeString(TEST_DATA);
-                    testFile.writeFromExistingFile(pictureFile,false);
+                    testFile.writeString("TESTING");
+//                    testFile.writeFromExistingFile(pictureFile,false);
                     
                 } finally {
                     testFile.close();
