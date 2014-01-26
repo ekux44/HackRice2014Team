@@ -13,19 +13,31 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 public class SnapRouletteActivity extends Activity {
 
 	ImageView iOne;
+	ProgressBar progress;
 
 	private static final String SERVER_GET_URL = "http://192.168.43.159/posts/getRandom";
 
 	public void onCreate(Bundle b) {
 		super.onCreate(b);
+		
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		
 		this.setContentView(R.layout.activity_snap_roulette);
 
 		iOne = (ImageView) this.findViewById(R.id.snapRouletteAct);
+		
+		progress = (ProgressBar)this.findViewById(R.id.progressBar);
 		
 	}
 	
@@ -47,10 +59,13 @@ public class SnapRouletteActivity extends Activity {
 	}
 
 	public void showImage(Bitmap d) {
-
+		
+		iOne.setVisibility(View.VISIBLE);
 		int nh = (int) (d.getHeight() * (512.0 / d.getWidth()));
 		Bitmap scaled = Bitmap.createScaledBitmap(d, 512, nh, true);
 		iOne.setImageBitmap(scaled);
+		progress.setVisibility(View.GONE);
+		
 	}
 
 	private void getRandomPic() {
@@ -85,6 +100,9 @@ public class SnapRouletteActivity extends Activity {
 			int picHeight = (picWid*result.getHeight())/result.getWidth();
 			Bitmap rBm = Bitmap.createScaledBitmap(result, picWid, picHeight, true);
 			iOne.setImageBitmap(rBm);
+
+			iOne.setVisibility(View.VISIBLE);
+			progress.setVisibility(View.GONE);
 		}
 	}
 

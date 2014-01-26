@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
@@ -11,6 +13,11 @@ public class SnapRouletteOfferActivity extends Activity implements OnClickListen
 
 	public void onCreate(Bundle b){
 		super.onCreate(b);
+		
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		
 		this.setContentView(R.layout.activity_snap_roulette_offer);
 		
 		((Button)this.findViewById(R.id.playButton)).setOnClickListener(this);

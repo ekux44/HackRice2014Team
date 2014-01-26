@@ -2,13 +2,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@color/black" >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
 
     <ImageView
         android:id="@+id/snapRouletteAct"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:adjustViewBounds="true"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/ic_launcher"
+        android:visibility="gone" />
 
 </LinearLayout>
