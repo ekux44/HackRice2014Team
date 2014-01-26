@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.kuxhausen.hackrice.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -52,7 +52,7 @@
          android:label="Dropbox Sync" />
 
         <activity
-            android:name="com.kuxhausen.hackrice.ReviewDayActivity" >
+            android:name="com.kuxhausen.hackrice.ReviewDayActivity" android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
             </intent-filter>
@@ -67,6 +67,11 @@
             android:exported="false" >
         </provider>
 
+        <activity
+            android:name="com.kuxhausen.hackrice.SnapRoutletOfferActivity" 
+            android:theme="@style/AppTheme">
+        </activity>
+        
     </application>
 
 </manifest>
