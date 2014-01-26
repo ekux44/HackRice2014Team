@@ -50,6 +50,23 @@
          android:enabled="true"
          android:exported="false"
          android:label="Dropbox Sync" />
+
+        <activity
+            android:name="com.kuxhausen.hackrice.ReviewDayActivity" >
+            <intent-filter>
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger_review" />
+        </activity>
+        
+        <provider
+            android:name="com.kuxhausen.hackrice.DatabaseProvider"
+            android:authorities="com.kuxhausen.provider.hackrice.database"
+            android:exported="false" >
+        </provider>
+
     </application>
 
 </manifest>

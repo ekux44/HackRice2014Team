@@ -38,6 +38,10 @@ import com.dropbox.sync.android.DbxException.Unauthorized;
 import com.dropbox.sync.android.DbxFile;
 import com.dropbox.sync.android.DbxFileSystem;
 import com.dropbox.sync.android.DbxPath;
+import android.content.ContentValues;
+import android.view.Window;
+import android.view.WindowManager;
+
 import com.google.android.glass.media.CameraManager;
 
 public class MainActivity extends Activity {
@@ -59,32 +63,38 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
 
 		mDbxAcctMgr = DbxAccountManager.getInstance(getApplicationContext(),
 				appKey, appSecret);
-
+		
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		
+		
+		setContentView(R.layout.activity_main);
+		
 		takePicture();
-		getRandomPic();
+		//getRandomPic();
 
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.action_review, menu);
 		return true;
 	}
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		if (requestCode == TAKE_PICTURE_REQUEST && resultCode == RESULT_OK) {
-			String picturePath = data
-					.getStringExtra(CameraManager.EXTRA_PICTURE_FILE_PATH);
-			processPictureWhenReady(picturePath);
-		}
+	    if (requestCode == TAKE_PICTURE_REQUEST && resultCode == RESULT_OK) {
+	        String picturePath = data.getStringExtra(
+	                CameraManager.EXTRA_PICTURE_FILE_PATH);
+	        processPictureWhenReady(picturePath);
 
-		super.onActivityResult(requestCode, resultCode, data);
+			this.finish();
+	    }
 	}
 
 	private void takePicture() {
@@ -96,8 +106,17 @@ public class MainActivity extends Activity {
 		final File pictureFile = new File(picturePath);
 
 		if (pictureFile.exists()) {
-			// The picture is ready; process it.
-			// uploadToDropbox(pictureFile);
+			ContentValues mNewValues = new ContentValues();
+			/*
+			 * Sets the values of each column and inserts the
+			 * word. The arguments to the "put" method are
+			 * "column name" and "value"
+			 */
+			mNewValues.put(DatabaseHelper.PictureDB.FILE_PATH, picturePath);
+			mNewValues.put(DatabaseHelper.PictureDB.PICTURE_ID, DatabaseHelper.PictureDB.PICTURE_ID);
+			this.getContentResolver().insert(DatabaseHelper.PictureDB.PICTURES_URI, mNewValues);
+			
+			
 			sendToServer(pictureFile);
 		} else {
 			// The file does not exist yet. Before starting the file observer,
@@ -153,8 +172,8 @@ public class MainActivity extends Activity {
 		ServerGetRandomTask getRandom = new ServerGetRandomTask();
 		getRandom.execute(randFile);
 	}
-
-	private void uploadToDropbox(File pictureFile) {
+		
+	/*private void uploadToDropbox(File pictureFile) {
 
 		mDbxAcctMgr.startLink((Activity) this, REQUEST_LINK_TO_DBX);
 
@@ -186,7 +205,7 @@ public class MainActivity extends Activity {
 			e.printStackTrace();
 		}
 	}
-
+*/
 	private class ServerGetRandomTask extends AsyncTask<File, Integer, Integer> {
 
 		@Override
@@ -253,10 +272,6 @@ public class MainActivity extends Activity {
 		@Override
 		protected void onPostExecute(Integer result) {
 		}
-	}
-
-	private static File convertBase64(String s) {
-
 	}
 
 	private static String convertBase64(File file) {
