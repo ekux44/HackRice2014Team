@@ -3,7 +3,9 @@
     package="com.kuxhausen.hackrice"
     android:versionCode="1"
     android:versionName="1.0" >
-
+   <uses-permission android:name="android.permission.INTERNET" />
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
     <uses-sdk
         android:minSdkVersion="15"
         android:targetSdkVersion="19" />
@@ -23,11 +25,31 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <meta-data
                 android:name="com.google.android.glass.VoiceTrigger"
                 android:resource="@xml/voice_trigger_start" />
         </activity>
+        
+        <activity android:name="com.dropbox.sync.android.DbxAuthActivity" />
+      <activity
+         android:name="com.dropbox.client2.android.AuthActivity"
+         android:launchMode="singleTask" >
+         <intent-filter>
+            <data android:scheme="db-p78hpiyefxd4p9z" />
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter>
+      </activity>
+        
+        <service
+         android:name="com.dropbox.sync.android.DbxSyncService"
+         android:enabled="true"
+         android:exported="false"
+         android:label="Dropbox Sync" />
     </application>
 
 </manifest>
